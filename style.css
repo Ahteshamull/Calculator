@@ -22,7 +22,6 @@ body {
 }
 input {
   width: 320px;
-  border: none;
   padding: 24px;
   margin: 10px;
   background: transparent;
@@ -46,10 +45,22 @@ button {
   color: #ffffff;
   font-size: 20px;
   box-shadow: -8px -8px 15px rgba(225,255,255,0.1);
+  transition: .1s;
+}
+button:hover{
+  width: 60px;
+  height: 60px;
+  background: teal;
 }
 .btn{
   background: orange;  
 }
 .plus{
    color: #6dee0a; 
+}
+@media (min-width: 320px) and (max-width: 575px){
+  .calculator{
+    width: 100%;
+  }
+  
 }
